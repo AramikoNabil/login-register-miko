@@ -13,6 +13,9 @@ import background from '../assets/image/bg.png';
 import icon from '../assets/icon/logoPI-removebg-preview.png';
 
 const {height, width} = Dimensions.get('window');
+const label = 'Under Development';
+const label1 = 'Under Development';
+const label2 = 'Under Development';
 
 class GetStarted extends React.Component {
   render() {
@@ -24,7 +27,7 @@ class GetStarted extends React.Component {
               <Image source={icon} style={styles.icon} />
               <Text
                 style={styles.fontLogin}
-                onPress={() => alert('Under Development')}>
+                onPress={() => alert(label)}>
                 LOGIN
               </Text>
             </View>
@@ -37,10 +40,10 @@ class GetStarted extends React.Component {
             <View style={styles.containerButton}>
               <TouchableOpacity
                 style={styles.button}
-                onPress={() => alert('Under Development')}>
+                onPress={() => alert(label1)}>
                 <Text
                   style={styles.signUp}
-                  onPress={() => alert('Under Development')}>
+                  onPress={() => alert(label2)}>
                   Sign Up
                 </Text>
               </TouchableOpacity>
